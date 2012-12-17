@@ -1,0 +1,100 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity" >
+
+    <LinearLayout
+        android:id="@+id/linearLayout1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+    </LinearLayout>
+    
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/linearLayout1"
+        android:layout_marginLeft="28dp"
+        android:layout_marginTop="62dp"
+        android:text="@string/hello_world" />
+
+    <Button
+        android:id="@+id/setWallperKalendar"
+        android:layout_width="163dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/linearLayout1"
+        android:layout_weight="0.17"
+        android:text="Button" />
+
+    <ImageView
+        android:id="@+id/imageView04"
+        android:layout_width="50dp"
+        android:layout_height="80dp"
+        android:layout_alignRight="@+id/setWallperKalendar"
+        android:layout_alignTop="@+id/imageView06"
+        android:src="@drawable/chicas_polar_pilsen_08" />
+
+    <ImageView
+        android:id="@+id/imageView03"
+        android:layout_width="50dp"
+        android:layout_height="80dp"
+        android:layout_alignTop="@+id/imageView04"
+        android:layout_toRightOf="@+id/imageView04"
+        android:src="@drawable/chicas_polar_pilsen_04" />
+
+    <Button
+        android:id="@+id/btnStartService"
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/textView1"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="21dp"
+        android:layout_toLeftOf="@+id/button2"
+        android:text="start service" />
+
+    <ImageView
+        android:id="@+id/imageView02"
+        android:layout_width="50dp"
+        android:layout_height="80dp"
+        android:layout_alignTop="@+id/imageView03"
+        android:layout_toRightOf="@+id/imageView03"
+        android:src="@drawable/chicas_polar_pilsen_06" />
+
+    <ImageView
+        android:id="@+id/imageView05"
+        android:layout_width="50dp"
+        android:layout_height="80dp"
+        android:layout_below="@+id/textView1"
+        android:layout_toRightOf="@+id/imageView02"
+        android:src="@drawable/chicas_polar_pilsen_05" />
+
+    <ImageView
+        android:id="@+id/imageView06"
+        android:layout_width="50dp"
+        android:layout_height="80dp"
+        android:layout_below="@+id/textView1"
+        android:layout_toLeftOf="@+id/imageView04"
+        android:src="@drawable/chicas_polar_pilsen_09" />
+
+    <ImageView
+        android:id="@+id/imageView01"
+        android:layout_width="50dp"
+        android:layout_height="80dp"
+        android:layout_below="@+id/textView1"
+        android:layout_toLeftOf="@+id/imageView06"
+        android:src="@drawable/chicas_polar_pilsen_07" />
+
+    <Button
+        android:id="@+id/btnStopService"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/imageView03"
+        android:layout_alignTop="@+id/btnStartService"
+        android:text="stop service" />
+    
+</RelativeLayout>
